@@ -22,18 +22,15 @@ from keras.models import load_model
 from flask import Flask, redirect, url_for, request, render_template
 from werkzeug.utils import secure_filename
 from gevent.pywsgi import WSGIServer
-import urllib.request
+
 
 # Define a flask app
 app = Flask(__name__)
 
 # Model saved with Keras model.save()
-file_id = '1YEMGDGKu6eCWnBALD0cs9dhRerVZINVS'
-destination= 'models/TB_model.h5'
 
 
-
-MODEL_PATH = 'models\inception_tb.h5'
+MODEL_PATH = '.\inception_tb.h5'
 model_TB = tf.keras.models.load_model(MODEL_PATH)
 
 image_dimensions = {'height':256, 'width':256, 'channels':3}

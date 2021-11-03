@@ -3,6 +3,6 @@ gunicorn
 Werkzeug
 future
 numpy
-tensorflow
+tensorflow-cpu
 gevent
 pillow

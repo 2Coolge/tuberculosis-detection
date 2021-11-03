@@ -15,7 +15,7 @@ import tensorflow as tf
 
 # Keras
 
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 #from keras.preprocessing import image
 
 # Flask utils
@@ -73,7 +73,7 @@ def model_predict(img_path, model):
     str = ""
     
     if result == 0:
-        str = "abnormal"
+        str = "TB detected"
     else:
         str = "normal"
 

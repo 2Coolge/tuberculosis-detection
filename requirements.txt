@@ -3,6 +3,6 @@ gunicorn
 Werkzeug
 future
 numpy
-tensorflow==2.5
+tensorflow==2.2
 gevent
 pillow

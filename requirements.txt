@@ -3,7 +3,6 @@ gunicorn
 Werkzeug
 future
 numpy
-keras
 tensorflow
 gevent
 pillow

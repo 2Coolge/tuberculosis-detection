@@ -30,7 +30,7 @@ app = Flask(__name__)
 # Model saved with Keras model.save()
 
 
-MODEL_PATH = 'inception_tb.h5'
+MODEL_PATH = './inception_tb.h5'
 model_TB = tf.keras.models.load_model(MODEL_PATH)
 
 image_dimensions = {'height':256, 'width':256, 'channels':3}
